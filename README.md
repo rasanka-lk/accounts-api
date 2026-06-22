@@ -37,6 +37,16 @@ Run tests:
 gradle test
 ```
 
+## Swagger Docs
+```
+http://localhost:8080/swagger-ui.html
+```
+
+## Open API JSON
+```
+http://localhost:8080/v3/api-docs
+```
+
 ## API examples
 
 ### Create savings account
@@ -79,7 +89,6 @@ curl http://localhost:8080/api/v1/savings-accounts/account-number/{accountNumber
 - Add Flyway for database migrations.
 - Update account number generation logic
 - Load offensive nick names from a db table
-- Add OpenAPI/Swagger documentation.
 - Add authentication and authorisation.
 - Add structured logging and correlation IDs.
 - Add resilience patterns such as retry, timeout, and circuit breaker where appropriate.
