@@ -9,7 +9,7 @@ import java.util.Set;
 @Component
 public class NotOffensiveNicknameValidator implements ConstraintValidator<NotOffensiveNickname, String> {
 
-    // TODO: Load the list from a db table
+    // TODO: Load the list from a db table or external config
     private static final Set<String> OFFENSIVE_NICKNAMES = Set.of(
             "offensive",
             "badword",

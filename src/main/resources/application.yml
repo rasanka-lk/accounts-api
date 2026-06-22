@@ -13,6 +13,7 @@ spring:
       hibernate:
         format_sql: true
   cache:
+    # type: simple to run without caching
     type: redis
   data:
     redis:

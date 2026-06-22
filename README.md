@@ -2,18 +2,13 @@
 
 Simple project for creating and retrieving savings bank accounts.
 
-## Tech stack
+## Stack
 
 - Java 21
-- Spring Boot 3
+- Spring Boot 4.1.0
+- Postgres
+- Redis 
 - Gradle
-- Spring Web
-- Spring Validation
-- Spring Data JPA
-- PostgreSQL
-- Spring Cache
-- Redis cache
-- JUnit 5 / MockMvc / Mockito
 
 ## Assumptions
 
