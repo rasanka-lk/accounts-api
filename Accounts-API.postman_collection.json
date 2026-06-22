@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "1ce64675-69b1-4a1a-af9f-9b6126480f0f",
+    "name": "Accounts-API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "960503"
+  },
+  "item": [
+    {
+      "name": "Create Account",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"customerName\": \"Rasanka Jayawardana\",\n    \"accountNickName\": \"Vacation\"\n  }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/savings-accounts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "savings-accounts"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST http://localhost:8080/api/v1/savings-accounts \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"customerName\": \"Rasanka Jayawardana\",\n    \"accountNickName\": \"Vacation\"\n  }'"
+      },
+      "response": []
+    },
+    {
+      "name": "Get account by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/savings-accounts/91a15907-dfde-45f9-93a9-1ef788606946",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "savings-accounts",
+            "91a15907-dfde-45f9-93a9-1ef788606946"
+          ]
+        },
+        "description": "Generated from cURL: curl http://localhost:8080/api/v1/savings-accounts/{id}"
+      },
+      "response": []
+    },
+    {
+      "name": "Get account by account number ",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/savings-accounts/account-number/756396285441",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "savings-accounts",
+            "account-number",
+            "756396285441"
+          ]
+        },
+        "description": "Generated from cURL: curl http://localhost:8080/api/v1/savings-accounts/account-number/{accountNumber}"
+      },
+      "response": []
+    }
+  ]
+}
