@@ -20,6 +20,8 @@ public class CacheConfig {
     public static final String SAVINGS_ACCOUNTS_CACHE = "savingsAccounts";
     public static final String SAVINGS_ACCOUNTS_BY_NUMBER_CACHE = "savingsAccountsByNumber";
 
+    // Using a simple redis config to avoid complexity
+    // TODO - Update redis serialization strategy and cache invalidation policies
     @Bean
     @ConditionalOnProperty(name = "spring.cache.type", havingValue = "redis")
     RedisCacheConfiguration redisCacheConfiguration() {
